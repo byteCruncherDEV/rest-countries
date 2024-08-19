@@ -20,10 +20,10 @@ const CountriesPage = () => {
     <>
       {isLoading && <div>Loading...</div>}
       {countriesError && countriesError}
-      {!isLoading && countries.length > 0 ? (
-        <CountriesList countries={countries} />
-      ) : (
+      {!isLoading && countries.length <= 0 ? (
         <div>Countries not found</div>
+      ) : (
+        <CountriesList countries={countries} />
       )}
     </>
   );
