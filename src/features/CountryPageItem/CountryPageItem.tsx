@@ -27,7 +27,9 @@ const CountryPageItem = ({ country }: ICountryPageItem) => {
           <ul>
             {toStringMaps(country.maps).map((map) => (
               <li>
-                <a href={map[1]}>{map[0]}</a>
+                <a target="_blank" href={map[1]}>
+                  {map[0]}
+                </a>
               </li>
             ))}
           </ul>

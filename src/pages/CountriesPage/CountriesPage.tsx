@@ -3,7 +3,7 @@ import { useEffect, useState } from 'react';
 import { ICountry } from '../../entities/country';
 
 const CountriesPage = () => {
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [countriesError, setCountriesError] = useState<string>('');
   const [countries, setCountries] = useState<ICountry[]>([]);
 
